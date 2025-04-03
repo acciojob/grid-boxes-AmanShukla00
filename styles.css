@@ -1,8 +1,7 @@
-/*  your css code here. If applicable */
 #grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-rows: repeat(5, 124px);
     gap: 10px;
     width: 80%;
     margin: 50px auto;
@@ -17,4 +16,21 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+}
+
+/* Specific Grid Item Layout */
+#grid > div:nth-child(1) {
+    grid-column: span 4 / auto;
+}
+#grid > div:nth-child(2) {
+    grid-row: span 4 / auto;
+}
+#grid > div:nth-child(4) {
+    grid-column: span 2 / auto;
+}
+#grid > div:nth-child(5) {
+    grid-column: span 2 / auto;
+}
+#grid > div:nth-child(10) {
+    grid-column: span 3 / auto;
 }
